@@ -2,7 +2,7 @@
 
 A Python-based quantitative portfolio management and risk analytics framework combining portfolio optimization, factor analysis, risk measurement, scenario testing, rebalancing, and benchmark evaluation.
 
-The project develops and evaluates both an **active U.S. equity portfolio** and a **passive DJIA-tracking portfolio**, with a focus on translating quantitative models into practical portfolio and risk-management decisions.
+The project develops and evaluates both an active U.S. equity portfolio and a passive DJIA-tracking portfolio, with a focus on translating quantitative models into practical portfolio and risk-management decisions.
 
 ---
 
@@ -20,7 +20,7 @@ The framework was developed to answer several practical portfolio management que
 - How accurately can a passive portfolio replicate the DJIA?
 - How can index futures be used to manage systematic exposure and cash drag?
 
-The analysis combines **fundamental views, market information, statistical modeling, portfolio optimization, and risk controls** into one end-to-end workflow.
+The analysis combines fundamental views, market information, statistical modeling, portfolio optimization, and risk controls into one end-to-end workflow.
 
 ---
 
@@ -56,7 +56,7 @@ Performance Evaluation
 
 ## 1. Data & Investment Universe
 
-The active strategy is constructed from large-cap U.S. equities within the **Dow Jones Industrial Average (DJIA)** universe.
+The active strategy is constructed from large-cap U.S. equities within the Dow Jones Industrial Average (DJIA) universe.
 
 Historical market data are collected and processed in Python for:
 
@@ -82,7 +82,7 @@ The framework also incorporates:
 
 A central issue in portfolio optimization is estimation error in the variance-covariance matrix.
 
-Instead of relying only on the sample covariance matrix, the project applies **covariance shrinkage techniques** to improve stability.
+Instead of relying only on the sample covariance matrix, the project applies covariance shrinkage techniques to improve stability.
 
 Implemented approaches include:
 
@@ -101,7 +101,7 @@ The shrinkage framework helps reduce sensitivity to noisy historical estimates a
 
 ## 3. Black–Litterman Portfolio Optimization
 
-Expected returns are generated using the **Black–Litterman model**.
+Expected returns are generated using the Black–Litterman model.
 
 The framework starts with market-implied equilibrium returns and incorporates investor views derived from:
 
@@ -129,21 +129,21 @@ The objective is to maximize expected risk-adjusted performance while preventing
 
 ## 4. Factor & Risk Attribution
 
-The portfolio is evaluated using the **Fama–French Three-Factor Model**:
+The portfolio is evaluated using the Fama–French Three-Factor Model:
 
 - **Mkt–RF:** Market risk
 - **SMB:** Size exposure
 - **HML:** Value exposure
 
-The analysis indicates that **market risk is the dominant driver of portfolio returns**, while size exposure is structurally limited by the large-cap DJIA universe and value exposure remains moderate.
+The analysis indicates that market risk is the dominant driver of portfolio returns, while size exposure is structurally limited by the large-cap DJIA universe and value exposure remains moderate.
 
-The factor model is therefore used primarily as a **risk and style diagnostic**, rather than as the main portfolio construction engine.
+The factor model is therefore used primarily as a risk and style diagnostic, rather than as the main portfolio construction engine.
 
 ---
 
 ## 5. Monte Carlo Risk Simulation
 
-Forward-looking portfolio risk is assessed using **10,000 Monte Carlo simulations**.
+Forward-looking portfolio risk is assessed using 10,000 Monte Carlo simulations.
 
 The simulation framework:
 
@@ -162,8 +162,8 @@ This provides a distribution-based view of risk rather than relying on a single 
 
 Portfolio downside exposure is evaluated using:
 
-- **95% Value-at-Risk**
-- **99% Value-at-Risk**
+- 95% Value-at-Risk
+- 99% Value-at-Risk
 - Historical VaR
 - Conditional VaR / CVaR
 - Maximum Drawdown
@@ -189,15 +189,15 @@ Evaluates downside sensitivity and capital preservation during stressed markets.
 ### Stable Market
 Measures portfolio behavior under relatively low-volatility conditions.
 
-The same portfolio construction is replayed across different historical environments to identify **regime dependence, downside sensitivity, and changes in risk-return behavior**.
+The same portfolio construction is replayed across different historical environments to identify regime dependence, downside sensitivity, and changes in risk-return behavior.
 
 ---
 
 ## 8. Rebalancing & Risk Monitoring
 
-The active portfolio uses a **drift-based rebalancing framework**.
+The active portfolio uses a drift-based rebalancing framework.
 
-Target portfolio weights are monitored through time, with a **±5% tolerance band** around the optimized allocation.
+Target portfolio weights are monitored through time, with a ±5% tolerance band** around the optimized allocation.
 
 ```text
 Target Weight
@@ -248,7 +248,7 @@ Performance was supported by selective exposure to high-quality cyclicals, finan
 
 ## 10. Passive DJIA Portfolio
 
-The project also constructs a **passive price-weighted DJIA portfolio**.
+The project also constructs a passive price-weighted DJIA portfolio.
 
 The strategy is designed to replicate the benchmark while minimizing tracking error.
 
@@ -297,7 +297,7 @@ The analysis demonstrates the trade-off between:
 - Drawdown protection
 - Tracking error
 
-This illustrates how derivatives can be used not only for return generation, but also for **exposure management and risk control**.
+This illustrates how derivatives can be used not only for return generation, but also for exposure management and risk control.
 
 ---
 
@@ -418,7 +418,7 @@ and run the notebook sequentially.
 
 ## Key Takeaways
 
-This project demonstrates the integration of **portfolio construction and risk management** rather than treating them as separate tasks.
+This project demonstrates the integration of portfolio construction and risk management rather than treating them as separate tasks.
 
 The main analytical insights are:
 
@@ -436,6 +436,6 @@ The main analytical insights are:
 
 ## Disclaimer
 
-This repository was developed for **academic and educational purposes**. The analysis, models, portfolio allocations, and results presented here should not be interpreted as investment advice or as recommendations to buy or sell any financial instrument.
+This repository was developed for academic and educational purposes. The analysis, models, portfolio allocations, and results presented here should not be interpreted as investment advice or as recommendations to buy or sell any financial instrument.
 
 Historical and simulated performance does not guarantee future results.
