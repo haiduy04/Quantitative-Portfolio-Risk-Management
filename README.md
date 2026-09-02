@@ -6,7 +6,7 @@ The project develops and evaluates both an active U.S. equity portfolio and a pa
 
 ---
 
-## Project Overview
+## 1. Project Overview
 
 The framework was developed to answer several practical portfolio management questions:
 
@@ -24,7 +24,7 @@ The analysis combines fundamental views, market information, statistical modelin
 
 ---
 
-## Framework
+## 2. Framework
 
 ```text
 Market & Fundamental Data
@@ -54,7 +54,7 @@ Performance Evaluation
 
 ---
 
-## 1. Data & Investment Universe
+## 3. Data & Investment Universe
 
 The active strategy is constructed from large-cap U.S. equities within the Dow Jones Industrial Average (DJIA) universe.
 
@@ -78,7 +78,7 @@ The framework also incorporates:
 
 ---
 
-## 2. Covariance & Risk Estimation
+## 4. Covariance & Risk Estimation
 
 A central issue in portfolio optimization is estimation error in the variance-covariance matrix.
 
@@ -99,7 +99,7 @@ The shrinkage framework helps reduce sensitivity to noisy historical estimates a
 
 ---
 
-## 3. Black–Litterman Portfolio Optimization
+## 5. Black–Litterman Portfolio Optimization
 
 Expected returns are generated using the Black–Litterman model.
 
@@ -127,7 +127,7 @@ The objective is to maximize expected risk-adjusted performance while preventing
 
 ---
 
-## 4. Factor & Risk Attribution
+## 6. Factor & Risk Attribution
 
 The portfolio is evaluated using the Fama–French Three-Factor Model:
 
@@ -141,7 +141,7 @@ The factor model is therefore used primarily as a risk and style diagnostic, rat
 
 ---
 
-## 5. Monte Carlo Risk Simulation
+## 7. Monte Carlo Risk Simulation
 
 Forward-looking portfolio risk is assessed using 10,000 Monte Carlo simulations.
 
@@ -158,7 +158,7 @@ This provides a distribution-based view of risk rather than relying on a single 
 
 ---
 
-## 6. Value-at-Risk & Downside Risk
+## 8. Value-at-Risk & Downside Risk
 
 Portfolio downside exposure is evaluated using:
 
@@ -176,7 +176,7 @@ The 95% and 99% VaR thresholds provide estimates of potential losses under adver
 
 ---
 
-## 7. Scenario Analysis
+## 9. Scenario Analysis
 
 The robustness of the portfolio is also evaluated across different market regimes:
 
@@ -193,7 +193,7 @@ The same portfolio construction is replayed across different historical environm
 
 ---
 
-## 8. Rebalancing & Risk Monitoring
+## 10. Rebalancing & Risk Monitoring
 
 The active portfolio uses a drift-based rebalancing framework.
 
@@ -223,7 +223,7 @@ During the analyzed backtest, portfolio weights remained inside the drift thresh
 
 ---
 
-## 9. Active Portfolio Performance
+## 11. Active Portfolio Performance
 
 ### Backtest Period
 **1 October 2024 – 20 November 2025**
@@ -246,7 +246,7 @@ Performance was supported by selective exposure to high-quality cyclicals, finan
 
 ---
 
-## 10. Passive DJIA Portfolio
+## 12. Passive DJIA Portfolio
 
 The project also constructs a passive price-weighted DJIA portfolio.
 
@@ -277,7 +277,7 @@ The low tracking error demonstrates close replication of the DJIA benchmark.
 
 ---
 
-## 11. Futures Hedging & Cash Equitization
+## 13. Futures Hedging & Cash Equitization
 
 DJIA index futures are incorporated to examine two different applications.
 
@@ -301,7 +301,7 @@ This illustrates how derivatives can be used not only for return generation, but
 
 ---
 
-## 12. Performance & Risk Metrics
+## 14. Performance & Risk Metrics
 
 The framework calculates and evaluates:
 
